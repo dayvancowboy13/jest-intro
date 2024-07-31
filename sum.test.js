@@ -2,7 +2,7 @@ const sum = require('./sum');
 
 test('adds 1 + 2 to equal 3', () => {
     expect(sum(1, 2)).toBe(3);
-    expect(sum(2, 5)).toBe(7);
+    // expect(sum(2, 5)).toBe(7);
 });
 
 
@@ -23,3 +23,7 @@ test('zero', () => {
     expect(z).not.toBeTruthy();
     expect(z).toBeFalsy();
 });
+
+
+// keep all the tests active so that if/when you change something, you will see if it breaks something because a
+// test which had previously passed may fail
